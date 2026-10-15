@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 2s ease;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 10fr 1fr;
+    text-align: center;
+}
+
+header{
+    background-color: #06D6A0;
+}
+
+nav{
+    background-color: #48CAE4;
+}
+
+main{
+    background-color: #ADE8F4;
+}
+
+footer{
+    background-color: #0077B6;
+}
+
+@media (max-width: 400px){
+
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    header{
+        background-color: #0077B6;
+    }
+
+    nav{
+        background-color: #06D6A0;
+    }
+
+    main{
+        background-color: #48CAE4;
+    }
+
+    footer{
+        background-color: #ADE8F4;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 767px){
+
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 10fr 1fr;
+    }
+
+    header{
+        background-color: #FFB703;
+    }
+
+    nav{
+        background-color: #FB8500;
+    }
+
+    main{
+        background-color: #FFD166;
+    }
+
+    footer{
+        background-color: #E76F51;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    body{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    header{
+        background-color: #7209B7;
+    }
+
+    nav{
+        background-color: #B5179E;
+    }
+
+    main{
+        background-color: #F72585;
+    }
+
+    footer{
+        background-color: #560BAD;
+    }
+}
+
+
+@media (min-width: 1024px){
+
+    body{
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 10fr 1fr;
+        font-size: 50px;
+        color: white;
+    }
+
+    header{
+        background-color: #06D6A0;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    nav{
+        background-color: #FB8500;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    main{
+        background-color: #0077B6;
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    footer{
+        background-color: #7209B7;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+}
